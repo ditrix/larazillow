@@ -12,7 +12,7 @@ class ListingController extends Controller
      */
     public function index()
     {
-        //
+        //dd(Listing::all());
         return inertia(
             'Listing/Index',
             [
@@ -43,12 +43,12 @@ class ListingController extends Controller
     public function show(Listing $listing)
     {
         //
-        return inertia(
-            'Listing/Show',
-            [
-                'listing' => $listing
-            ]
-        );
+            return inertia(
+                'Listing/Show',
+                [
+                    'listing' => $listing
+                ]
+            );
     }
 
     /**

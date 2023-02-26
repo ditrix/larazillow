@@ -1,10 +1,9 @@
 <template>
-    <Link href="/">Main Page</Link>&nbsp;
-    <Link href="/hello">Show Page</Link>
-
-    <div>The page with timer {{ timer }}</div>
-    <slot></slot>
-
+  <Link href="/">Main Page</Link>&nbsp;
+  <Link href="/hello">Show Page</Link>&nbsp;
+  <Link href="/listing">Listing</Link>
+  <div>The page with timer {{ timer }}</div>
+  <slot />
 </template>
 
 <script setup>
