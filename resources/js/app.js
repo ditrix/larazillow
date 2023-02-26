@@ -7,7 +7,7 @@ createInertiaApp({
   resolve: async (name) => {
     const pages = import.meta.glob('./Pages/**/*.vue', { eager: true })
 
-    const page = await pages[`./Pages/${name}.vue`];
+    const page = await pages[`./Pages/${name}.vue`]
 
     //return (await pages[`./Pages/${name}.vue`]())
 
